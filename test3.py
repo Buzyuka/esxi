@@ -3,6 +3,7 @@ from string import punctuation
 import yaml
 from toolz import partition
 import numpy as np
+# Подключаемся к хосту
 
 with open('config.yml', 'r') as fp:
     host_service = yaml.safe_load(fp)

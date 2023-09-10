@@ -15,3 +15,11 @@ with open('line.txt', 'w') as out:
         out.write(' ')
       print()
       out.write('\n')
+
+data = open('line.txt', 'r')
+while True:
+  line = data.readline()
+  if not line:
+    break
+  data_log = line.split(' ')
+  print(str(data_log[0]))
